@@ -4,12 +4,13 @@ import './App.scss';
 import { TabsComponent } from './tabs';
 
 function App() {
+  const tabTitles: string[] = ['Why React?', 'Core Features', 'Related Resources'];
   return (
     <div className="App">
       <header className="App-header">
-        <img className="App-logo" src={logo} alt={'Logo'}/>
+        <img className="App-logo w-1/6 h-1/6" src={logo} alt={'Logo'}/>
       </header>
-      <TabsComponent title={'Bla'}></TabsComponent>
+      <TabsComponent title={'Bla'} activeIndex={0} tabTitles={tabTitles}></TabsComponent>
     </div>
   );
 }
